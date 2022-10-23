@@ -1,0 +1,74 @@
+body{
+    color: white;
+}
+
+nav {
+    background-color: #F0B429;
+    text-align: center;
+}
+
+nav, header, .contenedor, footer {
+    max-width: 92%;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+.listaDesplegable {
+    display: none;
+    background-color: #F0B429;
+    position: absolute;
+    border-radius: 0.5em;
+}
+
+.listaDesplegable a {
+    color: black;
+    display: block;
+    text-align: left;
+    border-radius: 0.5em;
+}
+
+.menu li{
+    display: inline-block;
+    border-radius: 0.5em;
+}
+li a, boton{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.9em 1em;
+    border-radius: 0.5em;
+}
+.boton:hover .listaDesplegable {
+    display: block;
+    border-radius: 0.5em;
+}
+li a:hover {
+    background-color: #f47920;
+    border-radius: 0.5em;
+}
+header {
+    text-align: center;
+    color: black;
+}
+footer {
+    text-align: center;
+    background-color: #005883;
+}
+.contenedor {
+    background-color: #005883;
+}
+aside {
+    background-color: #005883;
+    display: inline-block;
+    width: 28%;
+    vertical-align: top;
+}
+.central {
+    background-color: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+div.autor {
+    color: #fff;
+}
