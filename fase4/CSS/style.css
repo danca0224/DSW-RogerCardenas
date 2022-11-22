@@ -1,74 +1,40 @@
-body{
-    color: white;
-}
-
-nav {
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #F0B429;
-    text-align: center;
+    padding: 20px;
+    color: aliceblue;
 }
 
-nav, header, .contenedor, footer {
-    max-width: 92%;
-    margin: auto;
-    border-radius: 0.5em;
+nav{background-color: #4fd3c4;
+    color: beige;
 }
 
-.listaDesplegable {
-    display: none;
-    background-color: #F0B429;
-    position: absolute;
-    border-radius: 0.5em;
+section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.listaDesplegable a {
-    color: black;
-    display: block;
-    text-align: left;
-    border-radius: 0.5em;
+article{
+    background-color: #C1F8CF;
+    grid: column 300px;
 }
 
-.menu li{
-    display: inline-block;
-    border-radius: 0.5em;
+aside{
+    background-color: #488FB1;
+    padding: 30px;
+    grid-column: 4/5 ;
 }
-li a, boton{
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.9em 1em;
-    border-radius: 0.5em;
+
+footer{
+    background-color: #533E85;
+    color: beige;
+    padding: 10px;
 }
-.boton:hover .listaDesplegable {
-    display: block;
-    border-radius: 0.5em;
-}
-li a:hover {
-    background-color: #f47920;
-    border-radius: 0.5em;
-}
-header {
-    text-align: center;
-    color: black;
-}
-footer {
-    text-align: center;
-    background-color: #005883;
-}
-.contenedor {
-    background-color: #005883;
-}
-aside {
-    background-color: #005883;
-    display: inline-block;
-    width: 28%;
-    vertical-align: top;
-}
-.central {
-    background-color: none;
-    display: inline-block;
-    vertical-align: top;
-    width: 70%;
-}
-div.autor {
-    color: #fff;
+
+menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
