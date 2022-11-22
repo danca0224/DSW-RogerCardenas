@@ -38,3 +38,12 @@ menu{
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media screen and (max-width:600px){
+
+header{
+    flex-direction: column; 
+}
+    
+    
+}
