@@ -3,61 +3,151 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos de CSS</title>
+    <title>fase4</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
-            <li class="boton"><a href="index.html">INICIO</a>
-                <div class="listaDesplegable"></div>
-            </li>
-            <li class="boton"><a>TEMAS</a>
-                <div class="listaDesplegable">
-                    <a href="pagina2.html">Fundamentos de CSS</a>
-                    <a href="pagina2.1.html">Frameworks CSS</a>
-                </div>
-            </li>
-            <li class="boton"><a>RECURSOS MULTIMEDIA</a>
-                <div class="listaDesplegable">
-                    <a href="pagina3.html">Fundamentos de CSS</a>
-                    <a href="pagina3.1.html">Frameworks CSS</a>
-                </div>
-            </li>
-            <li class="boton"><a>APRENDIZAJE</a>
-                <div class="listaDesplegable">
-                    <a href="pagina4.html">Fundamentos de CSS</a>
-                    <a href="pagina4.1.html">Frameworks CSS</a>
-                </div>
-            </li>
-            <li class="boton"><a href="pagina5.html">AUTOR</a>
-                <div class="listaDesplegable">
-                </div>
-            </li>
-        </ul>
-    </nav>
-    <section class="contenedor">
-        <section class="central">
-            <article>
-                
-            </article>
-        </section>
-        <aside>
-            <br><br>
-            <div class="twitter-timeline twitter-timeline-rendered"
-                style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;"><iframe
-                    id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"
-                    class=""
-                    style="position: static; visibility: visible; width: 300px; height: 450px; display: block; flex-grow: 1;"
-                    title="Twitter Timeline"
-                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/UniversidadUNAD?dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=es&amp;maxHeight=450px&amp;origin=https%3A%2F%2Fdgonzalezsan.github.io%2FDSW3_GRUPO_20%2F&amp;sessionId=3e6d15983f2dfa30ff5e7d70d6c3561cc016f1f6&amp;showHeader=true&amp;showReplies=false&amp;theme=dark&amp;transparent=false&amp;widgetsVersion=1c23387b1f70c%3A1664388199485"></iframe>
+    <header>
+        <h1> Curso paginas web: Fundamentos de CSS,
+            Frameworks CSS</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            TEMAS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pagina2.html">FUNDAMENTOS CSS</a></li>
+                            <li><a class="dropdown-item" href="pagina2.1.html">FRAMEWORKS CSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            RECURSOS MULTIMEDIA
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pagina3.html">FUNDAMENTOS CSS</a></li>
+                            <li><a class="dropdown-item" href="pagina3.1.html">FRAMEWORKS CSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            APRENDIZAJE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pagina4.html">¿QUÉ SON LOS MEDIA QUERIES?</a></li>
+                            <li><a class="dropdown-item" href="pagina4.1.html">MEDIDAS PARA MEJORAR EL SEO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            EVALUACION
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Evaluacion2.html">EVALUACION 1</a></li>
+                            <li><a class="dropdown-item" href="Evaluacion1.html">EVALUACION 2</a></li>
+                            <li><a class="dropdown-item" href="Evaluacion 3.html">EVALUACION 3</a></li>
+                            <li><a class="dropdown-item" href="Evaluacion 4.html">EVALUACION 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina5.html">AUTOR</a>
+                    </li>
+
+                </ul>
             </div>
-            <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </aside>
+        </div>
+    </nav>
+    <div class="container-fluid">
+
+        <section class="row">
+            <article class="col-md-8">
+                <br>
+
+                <h2>QUÉ SON LAS MEDIA QUERIES EN LOS DISEÑOS WEB RESPONSIVE</h2>
+                <h3>¿QUÉ SON LOS MEDIA QUERIES?</h3>
+                <br>
+                <p>Las media queries permiten a las páginas web utilizar diferentes declaraciones de estilo de la hoja
+                    de estilos en base al ancho de la pantalla del dispositivo en el que se visualiza el sitio web. En
+                    los diseños web responsive, una media query es una declaración CSS que se utiliza como parámetro
+                    para saber cuándo utilizar otra declaración de estilo en base a las dimensiones del dispositivo en
+                    donde se visualiza la página web. Hay dos maneras de utilizar una media query: utilizando una hoja
+                    de estilos externa o escribiendo directamente en la hoja de estilos.</p>
+
+                <p><img src="IMG/Media query.jpeg"></p>
+
+                <p>Los códigos presentados anteriormente son ejemplos de dos formas distintas de realizar declaraciones
+                    CSS que solo pueden utilizarse cuando el dispositivo se encuentra entre 320px y 480px. Una buena
+                    idea de uso para cada una de estos parámetros de declaración es utilizando estilos para móviles que
+                    puedan salirse de este rango. Por ejemplo, cargar ciertos estilos para dispositivos similares en
+                    anchura al de los iPhones, pero hacer que sean ignorados por ciertos dispositivos de Blackberry.
+                </p>
+                <br>
+                <h4>@MEDIA SCREEN</h4>
+
+                <p>Para quienes no están familiarizados con el atributo media, este se utiliza para separar qué estilos
+                    se utilizan para diferentes tipos de media, en este caso el screen. Por definición, el valor screen
+                    está planeado para ser utilizado primordialmente de pantallas de computadora a color y es el valor
+                    por defecto para CSS. El query se empieza con este tipo de media y luego se colocan los parámetros.
+                </p>
+
+                <h4>PARÁMETROS DE ANCHURA</h4>
+
+                <p>Los parámetros de anchura son los que hacen que una página web sea responsive. Un @media screen es lo
+                    que inicia un query y los atributos min y max establecen los parámetros. Con esto en mente, se sabe
+                    cómo utilizar diferentes declaraciones de estilos para diferentes anchuras.
+                    Como con el ejemplo colocado anteriormente, se estableció que el mínimo y máximo de anchura sería de
+                    320px y 480px respectivamente. Esto significa que cuando el dispositivo se encuentre en una anchura
+                    entre estos dos parámetros, las declaraciones establecidas en el query se utilizarán.
+                </p>
+                <br>
+
+                <p>
+                    <h8>Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. p. 130 - 144,
+                        186 - 230.</h8>
+                    <a style="font-size:10px; color: blue;"
+                        href="https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=130 ">https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/106494?page=130
+                    </a>
+                </p>
+                <p>
+                    <h8>Qué son las media queries en los diseños web responsive. (2016, November 14). Inercia Digital.
+                    </h8>
+                    <a style="font-size:10px; color: blue;"
+                        href="https://blog.inerciadigital.com/2016/11/14/media-queries-disenos-web-responsive/">https://blog.inerciadigital.com/2016/11/14/media-queries-disenos-web-responsive/
+                    </a>
+                </p>
+
+            </article>
+            <aside class="col-md-4">
+                <iframe width='100%' height='600px' scrolling='yes'
+                    src="https://syndication.twitter.com/srv/timeline-profile/screen-name/UniversidadUNAD?dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=es&amp;maxHeight=450px&amp;origin=https%3A%2F%2Fdgonzalezsan.github.io%2FDSW3_GRUPO_20%2F&amp;sessionId=3e6d15983f2dfa30ff5e7d70d6c3561cc016f1f6&amp;showHeader=true&amp;showReplies=false&amp;theme=dark&amp;transparent=false&amp;widgetsVersion=1c23387b1f70c%3A1664388199485"></iframe>
+    </div>
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </aside>
     </section>
+    </div>
+
     <footer>
         <h4>
             Autor: <br>
@@ -65,7 +155,10 @@
             Skipe: danielchufle@gmail.com
         </h4>
     </footer>
-    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
